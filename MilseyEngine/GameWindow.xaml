@@ -1,0 +1,118 @@
+﻿<Page x:Class="MilseyEngine.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MilseyEngine"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="700" Width="800">
+
+    <Page.Resources>
+        <Image x:Key="b_bishop" x:Shared="false" Source="icons/black_bishop.png" Height="70" Width="70" />
+        <Image x:Key="b_king" x:Shared="false" Source="icons/black_king.png" Height="70" Width="70"/>
+        <Image x:Key="b_knight" x:Shared="false" Source="icons/black_knight.png" Height="70" Width="70"/>
+        <Image x:Key="b_pawn" x:Shared="false" Source="icons/black_pawn.png" Height="70" Width="70"/>
+        <Image x:Key="b_queen" x:Shared="false" Source="icons/black_queen.png" Height="70" Width="70"/>
+        <Image x:Key="b_rook" x:Shared="false" Source="icons/black_rook.png" Height="70" Width="70"/>
+        <Image x:Key="w_bishop" x:Shared="false" Source="icons/white_bishop.png" Height="70" Width="70"/>
+        <Image x:Key="w_king" x:Shared="false" Source="icons/white_king.png" Height="70" Width="70"/>
+        <Image x:Key="w_knight" x:Shared="false" Source="icons/white_knight.png" Height="70" Width="70"/>
+        <Image x:Key="w_pawn" x:Shared="false" Source="icons/white_pawn.png" Height="70" Width="70"/>
+        <Image x:Key="w_queen" x:Shared="false" Source="icons/white_queen.png" Height="70" Width="70"/>
+        <Image x:Key="w_rook" x:Shared="false" Source="icons/white_rook.png" Height="70" Width="70"/>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="267*"/>
+            <ColumnDefinition Width="526*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="600" Stroke="Black" VerticalAlignment="Top" Width="600" Margin="5,30,0,0" Grid.ColumnSpan="2"/>
+        <Button x:Name="_71" Content="" HorizontalAlignment="Left" Margin="80,30,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_71_Click"/>
+        <Button x:Name="_70" Content="" HorizontalAlignment="Left" Margin="5,30,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_70_Click"/>
+        <Button x:Name="_72" Content="" HorizontalAlignment="Left" Margin="155,30,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_72_Click"/>
+        <Button x:Name="_77" Content="" HorizontalAlignment="Left" Margin="262.667,30,0,0" VerticalAlignment="Top" Width="75" Height="75" Grid.Column="1" Background="Black" Click="_77_Click"/>
+        <Button x:Name="_73" Content="" HorizontalAlignment="Left" Margin="230,30,0,0" VerticalAlignment="Top" Width="75" Height="75" Grid.ColumnSpan="2" Background="Black" Click="_73_Click"/>
+        <Button x:Name="_74" Content="" HorizontalAlignment="Left" Margin="37.667,30,0,0" VerticalAlignment="Top" Width="75" Height="75" Grid.Column="1" Background="White" Click="_74_Click"/>
+        <Button x:Name="_75" Content="" HorizontalAlignment="Left" Margin="112.667,30,0,0" VerticalAlignment="Top" Width="75" Height="75" Grid.Column="1" Background="Black" Click="_75_Click"/>
+        <Button x:Name="_76" Content="" HorizontalAlignment="Left" Margin="187.667,30,0,0" VerticalAlignment="Top" Width="75" Height="75" Grid.Column="1" Background="White" Click="_76_Click"/>
+        <Button x:Name="_61" Content="" HorizontalAlignment="Left" Margin="80,105,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_61_Click"/>
+        <Button x:Name="_62" Content="" HorizontalAlignment="Left" Margin="155,105,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_62_Click"/>
+        <Button x:Name="_60" Content="" HorizontalAlignment="Left" Margin="5,105,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_60_Click"/>
+        <Button x:Name="_63" Content="" HorizontalAlignment="Left" Margin="230,105,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.ColumnSpan="2" Click="_63_Click"/>
+        <Button x:Name="_65" Content="" HorizontalAlignment="Left" Margin="112.667,105,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_65_Click"/>
+        <Button x:Name="_67" Content="" HorizontalAlignment="Left" Margin="262.667,105,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_67_Click"/>
+        <Button x:Name="_64" Content="" HorizontalAlignment="Left" Margin="37.667,105,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="Black" Grid.Column="1" Click="_64_Click"/>
+        <Button x:Name="_66" Content="" HorizontalAlignment="Left" Margin="187.667,105,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="Black" Grid.Column="1" Click="_66_Click"/>
+        <Button x:Name="_51" Content="" HorizontalAlignment="Left" Margin="80,180,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_51_Click"/>
+        <Button x:Name="_53" Content="" HorizontalAlignment="Left" Margin="230,180,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.ColumnSpan="2" Click="_53_Click"/>
+        <Button x:Name="_55" Content="" HorizontalAlignment="Left" Margin="112.667,180,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_55_Click"/>
+        <Button x:Name="_57" Content="" HorizontalAlignment="Left" Margin="262.667,180,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_57_Click"/>
+        <Button x:Name="_50" Content="" HorizontalAlignment="Left" Margin="5,180,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_50_Click"/>
+        <Button x:Name="_52" Content="" HorizontalAlignment="Left" Margin="155,180,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_52_Click"/>
+        <Button x:Name="_54" Content="" HorizontalAlignment="Left" Margin="37.667,180,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_54_Click"/>
+        <Button x:Name="_56" Content="" HorizontalAlignment="Left" Margin="187.667,180,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_56_Click"/>
+        <Button x:Name="_40" Content="" HorizontalAlignment="Left" Margin="5,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_40_Click"/>
+        <Button x:Name="_42" Content="" HorizontalAlignment="Left" Margin="155,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_42_Click"/>
+        <Button x:Name="_44" Content="" HorizontalAlignment="Left" Margin="37.667,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_44_Click"/>
+        <Button x:Name="_46" Content="" HorizontalAlignment="Left" Margin="187.667,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_46_Click"/>
+        <Button x:Name="_41" Content="" HorizontalAlignment="Left" Margin="80,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_41_Click"/>
+        <Button x:Name="_43" Content="" HorizontalAlignment="Left" Margin="230,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.ColumnSpan="2" Click="_43_Click"/>
+        <Button x:Name="_45" Content="" HorizontalAlignment="Left" Margin="112.667,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_45_Click"/>
+        <Button x:Name="_47" Content="" HorizontalAlignment="Left" Margin="262.667,255,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_47_Click"/>
+        <Button x:Name="_31" Content="" HorizontalAlignment="Left" Margin="80,330,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_31_Click"/>
+        <Button x:Name="_33" Content="" HorizontalAlignment="Left" Margin="230,330,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.ColumnSpan="2" Click="_33_Click"/>
+        <Button x:Name="_35" Content="" HorizontalAlignment="Left" Margin="112.667,330,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_35_Click"/>
+        <Button x:Name="_37" Content="" HorizontalAlignment="Left" Margin="262.667,330,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_37_Click"/>
+        <Button x:Name="_30" Content="" HorizontalAlignment="Left" Margin="5,330,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_30_Click"/>
+        <Button x:Name="_32" Content="" HorizontalAlignment="Left" Margin="155,330,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_32_Click"/>
+        <Button x:Name="_34" Content="" HorizontalAlignment="Left" Margin="37.667,330,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_34_Click"/>
+        <Button x:Name="_36" Content="" HorizontalAlignment="Left" Margin="187.667,330,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_36_Click"/>
+        <Button x:Name="_21" Content="" HorizontalAlignment="Left" Margin="80,405,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_21_Click"/>
+        <Button x:Name="_23" Content="" HorizontalAlignment="Left" Margin="230,405,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.ColumnSpan="2" Click="_23_Click"/>
+        <Button x:Name="_25" Content="" HorizontalAlignment="Left" Margin="112.667,405,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_25_Click"/>
+        <Button x:Name="_27" Content="" HorizontalAlignment="Left" Margin="262.667,405,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_27_Click"/>
+        <Button x:Name="_20" Content="" HorizontalAlignment="Left" Margin="5,405,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_20_Click"/>
+        <Button x:Name="_22" Content="" Margin="155,405,37.333,0" VerticalAlignment="Top" Width = "75" Height="75" Foreground="Black" Background="Black" Click="_22_Click"/>
+        <Button x:Name="_24" Content="" HorizontalAlignment="Left" Margin="37.667,405,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_24_Click"/>
+        <Button x:Name="_26" Content="" HorizontalAlignment="Left" Margin="187.667,405,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_26_Click"/>
+        <Button x:Name="_11" Content="" HorizontalAlignment="Left" Margin="80,480,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_11_Click"/>
+        <Button x:Name="_13" Content="" HorizontalAlignment="Left" Margin="230,480,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.ColumnSpan="2" Click="_13_Click"/>
+        <Button x:Name="_15" Content="" HorizontalAlignment="Left" Margin="112.667,480,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_15_Click"/>
+        <Button x:Name="_17" Content="" HorizontalAlignment="Left" Margin="262.667,480,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_17_Click"/>
+        <Button x:Name="_10" Content="" HorizontalAlignment="Left" Margin="5,480,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_10_Click"/>
+        <Button x:Name="_12" Content="" HorizontalAlignment="Left" Margin="155,480,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_12_Click"/>
+        <Button x:Name="_14" Content="" HorizontalAlignment="Left" Margin="37.667,480,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_14_Click"/>
+        <Button x:Name="_16" Content="" HorizontalAlignment="Left" Margin="187.667,480,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_16_Click"/>
+        <Button x:Name="_02" Content="" Margin="155,555,0,0" VerticalAlignment="Top" Height="75" Foreground="Black" Background="Black" Click="_02_Click" HorizontalAlignment="Left" Width="75"/>
+        <Button x:Name="_04" Content="" HorizontalAlignment="Left" Margin="37.667,555,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_04_Click"/>
+        <Button x:Name="_00" Content="" HorizontalAlignment="Left" Margin="5,555,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Click="_00_Click"/>
+        <Button x:Name="_06" Content="" HorizontalAlignment="Left" Margin="187.667,555,0,0" VerticalAlignment="Top" Width="75" Height="75" Foreground="Black" Background="Black" Grid.Column="1" Click="_06_Click"/>
+        <Button x:Name="_01" Content="" HorizontalAlignment="Left" Margin="80,555,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Click="_01_Click"/>
+        <Button x:Name="_03" Content="" HorizontalAlignment="Left" Margin="230,555,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.ColumnSpan="2" Click="_03_Click"/>
+        <Button x:Name="_05" Content="" HorizontalAlignment="Left" Margin="112.667,555,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_05_Click"/>
+        <Button x:Name="_07" Content="" HorizontalAlignment="Left" Margin="262.667,555,0,0" VerticalAlignment="Top" Width="75" Height="75" Background="White" Grid.Column="1" Click="_07_Click"/>
+        <Label x:Name="turnLabel" Content="Turn: " Grid.Column="1" HorizontalAlignment="Left" Margin="376.667,107,0,0" VerticalAlignment="Top" FontSize="20" Width="61"/>
+        <Label x:Name="colorLabel" Content="White" Grid.Column="1" HorizontalAlignment="Left" Margin="442.667,111,0,0" VerticalAlignment="Top" FontSize="16" Background="White"/>
+        <Label x:Name="lastmoveLabel" Content="Last Move:" Grid.Column="1" HorizontalAlignment="Left" Margin="376.667,180,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="moveLabel" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="401.667,217,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="aLabel" Content="a" HorizontalAlignment="Left" Margin="32,630,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="bLabel" Content="b" HorizontalAlignment="Left" Margin="107,630,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="cLabel" Content="c" HorizontalAlignment="Left" Margin="182,630,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="dLabel" Content="d" HorizontalAlignment="Left" Margin="261,630,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label x:Name="eLabel" Content="e" HorizontalAlignment="Left" Margin="65.667,630,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="eLabel1" Content="f" HorizontalAlignment="Left" Margin="141.667,630,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="gLabel" Content="g" HorizontalAlignment="Left" Margin="217.667,630,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="hLabel" Content="h" HorizontalAlignment="Left" Margin="292.667,630,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="_1Label" Content="1" HorizontalAlignment="Left" Margin="337.667,572,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="_2Label" Content="2" HorizontalAlignment="Left" Margin="337.667,499,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="_3Label" Content="3" HorizontalAlignment="Left" Margin="337.667,425,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="_4Label" Content="4" HorizontalAlignment="Left" Margin="337.667,347,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="_5Label" Content="5" HorizontalAlignment="Left" Margin="337.667,275,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="_6Label" Content="6" HorizontalAlignment="Left" Margin="337.667,199,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="_7Label" Content="7" HorizontalAlignment="Left" Margin="337.667,125,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="_8Label" Content="8" HorizontalAlignment="Left" Margin="337.667,50,0,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1"/>
+        <Label x:Name="winLabel" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="358.667,298,0,0" VerticalAlignment="Top" Height="72" Width="164" FontSize="30" FontWeight="Bold"/>
+        <Button x:Name="newButton" Content="New Game" Grid.Column="1" HorizontalAlignment="Left" Margin="388,475,0,0" VerticalAlignment="Top" Width="107" Height="38" FontSize="18" Click="newButton_Click"/>
+    </Grid>
+</Page>
